@@ -1,0 +1,35 @@
+git clone https://github.com/luckyphillips/qmailtls.git
+
+cd qmailtls
+
+chmod 755 installqmailtls.sh
+
+./installqmailtls.sh
+
+## This script is not tested yet. 
+
+###########################
+
+## For pop server : Server Name=<yourdomain.com>
+
+## Port 995
+
+## Username : youremailaddress...i.e. user@yourdomain.com
+
+## Connection Security : SSL/TLS
+
+## Authentication Method : Encrypted Password
+
+########################
+
+## For SMTP
+
+## Server Name : <yourdomain.com>
+
+## Port 587
+
+## Connection Security : STARTTLS
+
+## Authentication Method : Normal Password
+
+## User Name : youremailaddress i.e. user@yourdomain.com
