@@ -108,7 +108,7 @@ mv autorespond /var/qmail/bin
 --enable-incdir=/usr/local/include
 
 make && make install-strip
-
+pkg install ucspi-tcp
 pkg install -y cdb
 
 cat <<EOF
