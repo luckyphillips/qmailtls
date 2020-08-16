@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/local/bin/bash
 
 # pw userdel -r -n alias
 # pw userdel -r -n qmaild
