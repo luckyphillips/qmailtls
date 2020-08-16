@@ -10,6 +10,24 @@
 # pw groupdel qmail
 # pw groupdel qnofiles
 
+if ! [ -d /usr/ports/mail/qmail-tls ]
+then
+echo "You must have ports added to install qmail"
+echo ""
+echo "Install Ports?"
+read installports
+case $installports in
+        [nN]*)
+            echo "No Probs"
+                exit 1
+        ;;
+        *)
+                portsnap fetch extract update
+                wait
+        ;;
+esac
+fi
+
 
 pw groupadd qnofiles -g 81
 pw useradd -g qnofiles -d /var/qmail/alias -m -n alias -u 81
